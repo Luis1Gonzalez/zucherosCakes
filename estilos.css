@@ -265,8 +265,8 @@ body {
 }
 }
 
-@media (max-width:600px){
-/*#main{
+/*@media (max-width:600px){
+#main{
   display:grid;
   grid-template-rows:repeat(2,auto);
   grid-template-areas:
