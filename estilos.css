@@ -1,0 +1,314 @@
+body {
+  background: #e5eef5;
+  width: 100%;
+  height: auto;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Source Serif Pro', serif;
+}
+
+#container {
+  width: 95%;
+  height: auto;
+  background: white;
+  margin: 0px auto;
+  padding: 30px;
+  display: grid;
+  grid-template-colums: 1fr;
+  grid-template-rows: 200px auto 100px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+#header {
+  grid-area: header;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas:
+    "logo nombre"
+    "nav nav";
+  padding: 0px 5px;
+  margin-bottom: 20px;
+}
+
+#logo {
+  grid-area: logo;
+  height: 100%;
+}
+
+#logo img {
+  display: block;
+  height: 100%;
+  margin: 0px auto;
+}
+
+#nombre {
+  grid-area: nombre;
+  text-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+#nombre h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #F6EBD4;
+  text-shadow: 0px 3px 2px #B3D3CF;
+}
+
+#nav {
+  grid-area: nav;
+  background: #E3F2FD;
+  border-radius: 5px;
+}
+
+#main {
+  grid-area: main;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 20% 78.6%;
+  grid-template-areas:
+    "lateral central"
+    "lateral central";
+    margin-bottom:20px;
+}
+
+#lateral {
+  grid-area: lateral;
+  width: 180px;
+  background: #fff;
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px #ccc;
+  margin-right: 15px;
+}
+
+#lateral h5 {
+  display: block;
+  background: #ccc;
+  border-radius: 3px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.lateral-card {
+  width: 160px;
+  height: 160px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+
+.carousel-inner {
+  height: 160px;
+  width: 160px;
+}
+
+.carousel-item {
+  height: 160px;
+  width: 160px;
+}
+
+#lateral-card-1 .carousel-inner .carousel-item img {
+  display: block;
+  height: 98%;
+  width: 160px;
+  object-fit: contain;
+  border-radius: 100%;
+  margin: 0 auto;
+  background-image: radial-gradient(circle at 27.88% 65.49%, #a3d8eb 0, #a6d7ee 6.25%, #aad6f1 12.5%, #afd5f3 18.75%, #b4d3f4 25%, #bad2f4 31.25%, #c0d0f4 37.5%, #c7cff3 43.75%, #cdcdf2 50%, #d3cbf0 56.25%, #d9caed 62.5%, #dfc8ea 68.75%, #e4c7e6 75%, #e9c6e2 81.25%, #edc5de 87.5%, #f0c4d9 93.75%, #f3c3d4 100%);
+}
+
+#lateral-card-2 .carousel-inner .carousel-item img {
+  display: block;
+  height: 98%;
+  width: 160px;
+  object-fit: contain;
+  border-radius: 100%;
+  margin: 0 auto;
+  background-image: radial-gradient(circle at 27.88% 65.49%, #a3d8eb 0, #a6d7ee 6.25%, #aad6f1 12.5%, #afd5f3 18.75%, #b4d3f4 25%, #bad2f4 31.25%, #c0d0f4 37.5%, #c7cff3 43.75%, #cdcdf2 50%, #d3cbf0 56.25%, #d9caed 62.5%, #dfc8ea 68.75%, #e4c7e6 75%, #e9c6e2 81.25%, #edc5de 87.5%, #f0c4d9 93.75%, #f3c3d4 100%);
+}
+
+#lateral-card-3 .carousel-inner .carousel-item img {
+  display: block;
+  height: 98%;
+  width: 160px;
+  object-fit: contain;
+  border-radius: 100%;
+  margin: 0 auto;
+  background-image: radial-gradient(circle at 27.88% 65.49%, #a3d8eb 0, #a6d7ee 6.25%, #aad6f1 12.5%, #afd5f3 18.75%, #b4d3f4 25%, #bad2f4 31.25%, #c0d0f4 37.5%, #c7cff3 43.75%, #cdcdf2 50%, #d3cbf0 56.25%, #d9caed 62.5%, #dfc8ea 68.75%, #e4c7e6 75%, #e9c6e2 81.25%, #edc5de 87.5%, #f0c4d9 93.75%, #f3c3d4 100%);
+}
+
+#central {
+  grid-area: central;
+  border-radius: 0px 10px 10px 0px;
+  width: 100%;
+}
+
+.article {
+  width: 100% height:auto;
+  display: grid;
+  grid-template-columns: 30% 69%;
+  grid-template-area:
+    "imagen"
+    "desarrollo";
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.imagen {
+  width: 100%;
+  height: 80%;
+}
+
+.imagen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.desarrollo {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.desarrollo h6 {
+  color: green;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Righteous', cursive;
+}
+
+.desarrollo p {
+  color: blue;
+  text-align: justify;
+  font-family: 'Cantarell', sans-serif;
+}
+
+.desarrollo span {
+  display: block;
+  text-align: right;
+  color: red;
+  letter-spacing: 3px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Righteous', cursive;
+}
+
+#footer {
+  grid-area: footer;
+  width: 100%;
+  background: olive;
+}
+
+@media (max-width:1100px) {
+  #main {
+    /*  grid-area: main;
+    width: 100%;
+    padding: 10px;
+    display: grid;*/
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+      "lateral lateral"
+      "central central";
+  }
+
+  #lateral {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "h5 h5 h5"
+      "lateral-card-1 lateral-card-2 lateral-card-3";
+  }
+
+  #lateral #h5 {
+    grid-area: h5;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width:780px){
+.article{
+  display:grid;
+  grid-template rows:40% 60%;
+  grid-template-areas:
+  "imagen imagen"
+  "desarrollo desarrollo";
+}
+.imagen{
+  grid-area:imagen;
+  width:100%;
+  margin-top:20px;
+  margin-bottom:0;
+}
+
+.imagen img{
+  width:30%;
+  margin:0 auto;
+}
+.desarrollo{
+  grid-area:desarrollo;
+  width:100%;
+}
+}
+
+@media (max-width:600px){
+#main{
+  display:grid;
+  grid-template-rows:repeat(2,auto);
+  grid-template-areas:
+  "lateral"
+  "central";
+  background: orange;
+  width:100%;
+  grid-gap:15px;
+}
+
+
+  #lateral{
+    grid-area:lateral;
+    display:grid;
+    grid-template-rows:repeat(4,auto);
+    grid-template-areas:
+    "h5"
+    "lateral-card-1"
+    "lateral-card-2"
+    "lateral-card-3";
+    height:auto;
+    width:100%;
+    background: aqua;
+
+  }
+  #h5{
+    grid-area:h5;
+    width:100%;
+    background: green;
+  }
+  #lateral-card-1{
+    grid-area:lateral-card-1;
+  }
+  #lateral-card-2{
+    grid-area:lateral-card-2;
+  }
+  #lateral-card-3{
+    grid-area:lateral-card-3;
+  }
+  #central{
+    grid-area: central;
+    background: blue;
+
+  }
+}
